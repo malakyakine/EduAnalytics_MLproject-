@@ -1,0 +1,22 @@
+Ce que calcule la page stats_kpi.php
+Pour chaque KPI, toutes ces statistiques calculées automatiquement :
+
+Statistique	Formule
+Moyenne µ	(1/n) × S KPI?
+Médiane	Valeur centrale après tri
+Écart-type s	v[ S(KPI? - µ)² / (n-1) ]
+CV	s/µ × 100% (dispersion relative)
+Q1, Q3	25e et 75e percentiles
+P10, P90	Percentiles extrêmes
+% sous seuil	COUNT(KPI? < seuil) / n × 100
+Pour l'utiliser
+Après installation de XAMPP et génération des 500 étudiants :
+
+
+http://localhost/eduanalytics_v2/stats_kpi.php
+La page affiche :
+
+Tableau 2.3 complet (pour copier dans le mémoire)
+Tableau condensé (version courte pour §2.5.1)
+6 histogrammes des distributions (un par KPI + performance)
+Toutes les formules SQL de calcul
